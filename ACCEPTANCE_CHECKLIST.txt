@@ -1,0 +1,49 @@
+RUNTIME ACCEPTANCE - ALL ITEMS PENDING UNREAL INSTALLATION
+
+Build and startup
+[ ] Editor target compiles with the supported toolchain; no missing modules.
+[ ] Bootstrap generates seven materials and Chapter01.umap without errors.
+[ ] Play starts on the selection screen with exactly Arjuna, Krishna, Bhishma.
+[ ] The floor, sky, banners, player, and objective marker render correctly.
+
+Arjuna and Bhishma
+[ ] Movement and camera respond; capsule cannot cross perimeter walls.
+[ ] Reaching the marker starts the encounter once, with five opponents.
+[ ] Arrows hit enemies and scenery and cannot damage their owner.
+[ ] Soldiers take two Arjuna hits; captain takes six. Bhishma damage differs.
+[ ] Focus changes fire interval; Steadfast reduces incoming damage.
+[ ] Ability cooldown prevents repeated activation and resets on restart.
+[ ] All opponents defeated produces completion; zero health produces failure.
+[ ] No damage/attacks continue after completion, failure, or while paused.
+
+Krishna
+[ ] Chariot placeholder replaces the bow; attack input never spawns an arrow.
+[ ] Four markers advance in order only when the player reaches them.
+[ ] Swift Passage changes speed for five seconds, then returns to baseline.
+[ ] The countdown pauses correctly and fails the chapter at zero.
+[ ] Reaching the fourth marker completes this perspective.
+
+State transitions and saves
+[ ] Restart works from both pause and result screens, including while paused.
+[ ] Changing characters clears arrows/enemies and resets health/timers/objectives.
+[ ] Holding fire while opening a menu does not leave firing stuck on resume.
+[ ] Completion flags persist after closing and relaunching the app.
+[ ] All three choices stay available after completion or a missing save file.
+
+Packaged Windows build
+[ ] Fresh packaged install loads the map and materials without editor content.
+[ ] Game can be completed with mouse/keyboard in a packaged build.
+
+DEFERRED - NOT PART OF PC PROTOTYPE ACCEPTANCE: Android / realme GT7
+[ ] ARM64 ASTC build cooks and installs without errors.
+[ ] Selection cards, text, and buttons fit the landscape screen/cutout area.
+[ ] Both virtual sticks work at the same time as shoot/ability touches.
+[ ] UI buttons do not steal unrelated movement touches or leave actions held.
+[ ] Camera, aim assistance, and text remain comfortable at medium resolution.
+[ ] Android Back opens pause; pause/resume and returning from background work.
+[ ] Save persists after a normal relaunch; interrupted writes do not crash loading.
+[ ] Measure frame pacing during a 15-minute combat session on medium settings.
+[ ] Confirm the 30 FPS target, thermal behavior, battery use, and memory use.
+[ ] Re-test on a weaker supported phone before stating minimum requirements.
+
+Do not treat static source validation as evidence that any item above passed.

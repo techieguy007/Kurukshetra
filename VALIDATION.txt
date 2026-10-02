@@ -1,0 +1,27 @@
+Validation status - 2 October 2026
+
+PASSED
+- 64 engine-independent source-package integrity checks.
+- Python syntax parsing for content bootstrap and source validator.
+- PowerShell syntax parsing for Prepare-Project.ps1, Package-Game.ps1,
+  and Launch-Prototype.ps1.
+- Launch script exits with an explicit error when Unreal Engine is missing.
+- Windows-only target and packaging configuration.
+- Exactly three selectable role identifiers: Arjuna, Krishna, Bhishma.
+- Local header paths, native event handler definitions, input mapping references,
+  generated material references, startup map and cook configuration checked.
+
+NOT RUN - UNREAL ENGINE IS NOT INSTALLED
+- UnrealHeaderTool and C++ compilation.
+- Content/map generation inside Unreal Editor.
+- Editor launch or visual inspection of the 3D scene and UMG interface.
+- Gameplay, collision, save/load, pause, restart, and control testing.
+- Cooking and packaging a Windows executable.
+- Frame rate, stability, and memory benchmarks.
+
+ANDROID
+Deferred at the user's request. No Android build or device test exists.
+
+This report verifies the source package's structure, not a playable game.
+Run the setup script after installing Unreal Engine, fix any reported errors,
+and complete ACCEPTANCE_CHECKLIST.txt before calling the prototype playable.
